@@ -1,0 +1,214 @@
+/* CSS RESET http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*END OF CSS RESET*/
+
+html {
+	position:relative;
+	min-height:100%;
+}
+
+body {
+	margin: 0 0 40px 0;
+}
+
+div#container {
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+div#signin {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    border-radius: 2px;  
+    border: 1px solid rgb(131, 131, 255);
+}
+
+div#header {
+    text-align: right;
+}
+
+div#footerrightbuttons {
+    float: right;
+    margin-right: 15px;
+}
+
+div#footerleftbuttons {
+    float: left;
+    margin-left: 15px;
+}
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F0F0F0;
+    border-top: 1px solid #DDDDDD;
+}
+
+div#footer div {
+    line-height: 40px;
+}
+
+img#logo {
+    height: 95px;
+    margin-bottom: 20px;
+}
+
+
+input#searchbar {
+    width: 500px;
+    height: 30px;
+    background: url(images/microphone.png) no-repeat;
+    
+    background-size: 20px;
+    background-position: right;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+fieldset#buttons {
+    margin-top: 20px;
+}
+
+a.buttonmarg {
+    margin-left: 25px;
+}
+
+a.footerbutton {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-family: arial, sans-serif;
+    font-size: small;
+}
+a.footerbutton:hover {
+    text-decoration: underline;
+}
+
+a.footerbutton {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-family: arial, sans-serif;
+    font-size: small;
+}
+a.footerbutton:hover {
+    text-decoration: underline;
+}
+a.toplink {
+    line-height: 80px;
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    font-family: arial,sans-serif;
+    font-size: small;
+    vertical-align: middle;
+}
+div#toplinkcontainer > * {
+    margin-right: 15px;
+}
+a.toplink:hover {
+    text-decoration: underline;
+}
+
+#grid {
+	background-image:url(images/grid.png); 
+	background-position: center;
+	height: 30px;  width: 30px;  display: inline-block;
+	vertical-align: middle;
+	opacity: 0.6;
+}
+
+div#grid:hover {
+    opacity: 1;
+}
+
+div#signin a {
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+button {
+    border: 1px solid #dcdcdc;
+    padding: 6px 10px;
+    background: -webkit-linear-gradient(#FCFCFC, #F0F0F0);
+    background:    -moz-linear-gradient(#FCFCFC, #F0F0F0);
+    background:     -ms-linear-gradient(#FCFCFC, #F0F0F0);
+    background:      -o-linear-gradient(#FCFCFC, #F0F0F0);
+    background: linear-gradient(#FCFCFC, #F0F0F0);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(95, 95, 95);
+}
+
+button:hover {
+      -moz-box-shadow:    0px 1px 1px 0px #ccc;
+      -webkit-box-shadow: 0px 1px 1px 0px #ccc;
+      box-shadow:         0px 1px 1px 0px #ccc;
+}
+
+input#searchbar:hover {
+    border: 1px solid rgb(136, 136, 136);
+}
+input#searchbar:focus {
+    border: 1px solid rgba(129, 129, 255, 0);
+}
+
+#new {
+    color: red;
+}
